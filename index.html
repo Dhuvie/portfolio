@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--
+    Portfolio Website
+    Copyright (c) 2024 Dhruv Narayan Bajaj
+    Licensed under the MIT License
+    https://github.com/DHuvie
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Narayan Bajaj — Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-text">
+            <div class="loader-line">
+                <span>D</span><span>H</span><span>R</span><span>U</span><span>V</span>
+            </div>
+            <div class="loader-line">
+                <span>N</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span>
+            </div>
+            <div class="loader-line">
+                <span>B</span><span>A</span><span>J</span><span>A</span><span>J</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Particles -->
+    <canvas id="particles"></canvas>
+    
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+    
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="name-full">Dhruv Narayan Bajaj</span>
+            <span class="name-stacked">
+                <span>Dhruv</span>
+                <span>Narayan</span>
+                <span>Bajaj</span>
+            </span>
+        </div>
+        <div class="nav-links">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-right">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17 10.5C16.1 14.4 12.6 17 8.5 17C4.4 17 1 13.6 1 9.5C1 5.4 3.6 1.9 7.5 1C6.6 2.1 6 3.5 6 5C6 8.3 8.7 11 12 11C13.5 11 14.9 10.4 16 9.5C16.6 9.8 17 10.1 17 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-label">Developer & CS Student</div>
+                    <h1 class="hero-title">
+                        <div class="line"><span>Why</span></div>
+                        <div class="line"><span>Hire</span></div>
+                        <div class="line"><span>Me</span></div>
+                    </h1>
+                </div>
+                <div class="hero-right">
+                    <ul class="hero-points">
+                        <li>Full-stack developer with expertise in TypeScript, React, Next.js, and Node.js</li>
+                        <li>AI/ML integration specialist — built fraud detection systems and intelligent applications</li>
+                        <li>Systems programmer with C++ and OpenGL experience for performance-critical applications</li>
+                        <li>Clean, scalable code that solves real-world problems efficiently</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero-scroll-text">
+                <span>Scroll down to see some works</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 2L8 14M8 14L12 10M8 14L4 10" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work" class="work">
+            <div class="section-header">
+                <h2>Work</h2>
+            </div>
+            <div class="projects">
+                <div class="project" data-index="0">
+                    <a href="https://github.com/Dhuvie/agrivision-ai" target="_blank">
+                        <div class="project-number">01</div>
+                        <div class="project-content">
+                            <h3>AgriVision AI</h3>
+                            <p>AI-powered agricultural intelligence platform for Indian farmers with crop predictions and market insights</p>
+                            <div class="project-tags">
+                                <span>TypeScript</span>
+                                <span>Next.js</span>
+                                <span>Gemini AI</span>
+                            </div>
+                        </div>
+                        <div class="project-arrow">→</div>
+                    </a>
+                </div>
+
+                <div class="project" data-index="1">
+                    <a href="https://github.com/Dhuvie/Pac-man" target="_blank">
+                        <div class="project-number">02</div>
+                        <div class="project-content">
+                            <h3>Pac-Man</h3>
+                            <p>Modern C++ game with advanced AI pathfinding, OpenGL graphics, and particle effects</p>
+                            <div class="project-tags">
+                                <span>C++</span>
+                                <span>OpenGL</span>
+                                <span>AI</span>
+                            </div>
+                        </div>
+                        <div class="project-arrow">→</div>
+                    </a>
+                </div>
+
+                <div class="project" data-index="2">
+                    <a href="https://github.com/Dhuvie/DashCode" target="_blank">
+                        <div class="project-number">03</div>
+                        <div class="project-content">
+                            <h3>DashCode</h3>
+                            <p>Full-stack analytics platform for competitive programmers with real-time data visualization</p>
+                            <div class="project-tags">
+                                <span>TypeScript</span>
+                                <span>Analytics</span>
+                                <span>Real-time</span>
+                            </div>
+                        </div>
+                        <div class="project-arrow">→</div>
+                    </a>
+                </div>
+
+                <div class="project" data-index="3">
+                    <a href="https://github.com/Dhuvie/UPI-ML-Fraud-Detection" target="_blank">
+                        <div class="project-number">04</div>
+                        <div class="project-content">
+                            <h3>UPI Fraud Detection</h3>
+                            <p>Machine learning system achieving 87% F1-Score in detecting fraudulent transactions</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>XGBoost</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                        <div class="project-arrow">→</div>
+                    </a>
+                </div>
+
+                <div class="project" data-index="4">
+                    <a href="https://github.com/Dhuvie/UniSlot" target="_blank">
+                        <div class="project-number">05</div>
+                        <div class="project-content">
+                            <h3>UniSlot</h3>
+                            <p>Collaboration platform for students with real-time chat and AI-powered moderation</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Real-time</span>
+                                <span>AI</span>
+                            </div>
+                        </div>
+                        <div class="project-arrow">→</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <p class="about-lead">Computer Science student passionate about building intelligent systems, optimizing hardware-software interactions, and exploring the intersection of AI and practical applications.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h4>Focus Areas</h4>
+                        <ul>
+                            <li>Full-stack Development</li>
+                            <li>Machine Learning & AI</li>
+                            <li>Systems Programming</li>
+                            <li>Hardware Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="about-card">
+                        <h4>Tech Stack</h4>
+                        <ul>
+                            <li>TypeScript, Python, C++</li>
+                            <li>React, Next.js, Flask</li>
+                            <li>OpenGL, XGBoost</li>
+                            <li>Node.js, TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">Open to collaborating on innovative projects and exploring new opportunities.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/DHuvie" target="_blank" class="contact-link">
+                        <span class="link-num">01</span>
+                        <span class="link-text">GitHub</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                    <a href="mailto:dhruvnarayanbajaj@gmail.com" class="contact-link">
+                        <span class="link-num">02</span>
+                        <span class="link-text">Email</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                    <a href="https://linkedin.com/in/dhruv-bajaj-a379b827a" target="_blank" class="contact-link">
+                        <span class="link-num">03</span>
+                        <span class="link-text">LinkedIn</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Dhruv Narayan Bajaj</h3>
+                    <p>Building intelligent systems that solve real problems</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/DHuvie" target="_blank">GitHub</a>
+                    <a href="mailto:dhruvnarayanbajaj@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/dhruv-bajaj-a379b827a" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Dhruv Narayan Bajaj · Designed & Built with passion</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
