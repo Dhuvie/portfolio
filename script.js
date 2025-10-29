@@ -592,7 +592,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== Console Message =====
-console.log('%c✨ Dhruv Narayan Bajaj', 'font-size: 24px; font-weight: 600; color: #f5f5f5; background: #0a0a0a; padding: 10px 20px;');
+console.log('%cDhruv Narayan Bajaj', 'font-size: 24px; font-weight: 600; color: #f5f5f5; background: #0a0a0a; padding: 10px 20px;');
 console.log('%cDeveloper & CS Student', 'font-size: 14px; color: #888;');
 console.log('%cGitHub: https://github.com/DHuvie', 'font-size: 12px; color: #f5f5f5;');
-console.log('%cPortfolio built with Anime.js ⚡', 'font-size: 11px; color: #666; font-style: italic;');
+console.log('%cPortfolio built with Anime.js', 'font-size: 11px; color: #666; font-style: italic;');
